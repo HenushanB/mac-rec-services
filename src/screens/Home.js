@@ -4,7 +4,6 @@ import ButtonCapacity from '../components/ButtonCapacity';
 import ButtonAnnouncement from '../components/ButtonAnnouncement';
 
 export default function Home() {
-    
     return (
         <ScrollView>
             <Search/>

@@ -1,8 +1,9 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
-import Settings from '../screens/Settings';
+import Settings from '../screens/Services';
 import {Image} from 'react-native'
 import data from '../../assets/Data';
+import Services from '../screens/Services';
 
 const Tab = createBottomTabNavigator();
 
@@ -41,7 +42,7 @@ function BottomTabNavigator() {
         />
         <Tab.Screen
             name="Services"
-            component={Settings} 
+            component={Services} 
             options={{
                 tabBarIcon: () => {
                     return (
