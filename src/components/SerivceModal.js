@@ -1,7 +1,7 @@
 import Modal from "react-native-modal";
 import {StyleSheet, View, Button, Text} from 'react-native'
 import { TouchableOpacity } from "react-native";
-import ServiceIcon from "./Icons/ServiceIcon";
+import ServiceIcon from "./ServiceIcon";
 import data from "../../assets/Data";
 
 const ServiceModal = ({isVisible, description, handleModal, icon}) => {

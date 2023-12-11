@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {StyleSheet, Text, View, ScrollView } from "react-native";
-import ServiceIcon from "../components/Icons/ServiceIcon";
+import ServiceIcon from "../components/ServiceIcon";
 import ServiceButton from "../components/ServiceButton";
 import ServiceModal from "../components/SerivceModal";
 import data from '../../assets/Data'

@@ -1,7 +1,10 @@
-import { View, Text, StyleSheet, Animated, TouchableWithoutFeedback, Easing } from "react-native";
+import { View, Text, StyleSheet, Animated, TouchableWithoutFeedback } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import React, {useState} from 'react';
 
 const ButtonAnnouncement = props => {
+
+    const navigation = useNavigation();
     const [scaleValue] = useState(new Animated.Value(1));
 
     const animateButton = () => {
@@ -16,6 +19,7 @@ const ButtonAnnouncement = props => {
                 useNativeDriver: true
             }).start();
         });
+        navigation.navigate("Announcement_Screen");
     };
     return(
         <View>

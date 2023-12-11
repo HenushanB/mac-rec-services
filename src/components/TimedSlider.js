@@ -1,6 +1,6 @@
 import {Text, View, StyleSheet, ScrollView} from 'react-native'
 import {LinearGradient} from 'expo-linear-gradient'
-import ServiceIcon from './Icons/ServiceIcon';
+import ServiceIcon from './ServiceIcon';
 
 const TimedSlider = ({url, time, start, end}) => {
     return(
