@@ -5,7 +5,8 @@ import ButtonAnnouncement from '../components/ButtonAnnouncement';
 
 export default function Home() {
     return (
-        <ScrollView>
+        <ScrollView style={[styles.container]}>
+            <Text style={{fontSize: 30, fontWeight:700, margin:10}}>Home</Text>
             <Search/>
             <Text style={styles.welcome}>Welcome, Henushan</Text>
             <View style={styles.capacity}>
@@ -21,6 +22,9 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        backgroundColor: 'white'
+    },
     capacity: {
         margin: 30,
         flexDirection: 'row',

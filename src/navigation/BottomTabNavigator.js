@@ -1,9 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../screens/Home';
-import Settings from '../screens/Services';
-import {Image} from 'react-native'
+import {Image, View, Dimensions} from 'react-native';
+import HomeStackScreen from './HomeStack';
+import ServicesStackScreen from './ServicesStack';
 import data from '../../assets/Data';
-import Services from '../screens/Services';
+
+const { width, height } = Dimensions.get("window")
 
 const Tab = createBottomTabNavigator();
 
@@ -12,21 +13,16 @@ function BottomTabNavigator() {
     <Tab.Navigator
         screenOptions={{
             tabBarShowLabel: true,
+            headerShown: false,
             tabBarStyle: {
-                position: 'absolute',
-                bottom: 25,
-                left: 20,
-                right: 20,
-                elevation: 0,
-                backgroundColor: '#ECE6F0',
-                borderRadius: 15,
-                height: 90,
+                borderRadius: 10,
+                height: 50,
             }
         }}    
     >
         <Tab.Screen 
             name="Home" 
-            component={Home} 
+            component={HomeStackScreen} 
             options={{
                 tabBarIcon: () => {
                     return (
@@ -42,7 +38,7 @@ function BottomTabNavigator() {
         />
         <Tab.Screen
             name="Services"
-            component={Services} 
+            component={ServicesStackScreen} 
             options={{
                 tabBarIcon: () => {
                     return (

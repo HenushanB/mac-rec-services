@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {StyleSheet, Text, View, Button } from "react-native";
+import {StyleSheet, Text, View, ScrollView } from "react-native";
 import ServiceIcon from "../components/Icons/ServiceIcon";
 import ServiceButton from "../components/ServiceButton";
 import ServiceModal from "../components/SerivceModal";
@@ -37,7 +37,7 @@ export default function Services() {
     const handleModalClimbing = () => setIsModalVisibleClimbing(() => !isModalVisibleClimbing);
 
     return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
         <Text style={styles.title}>DBAC Services</Text>
         <View style={{justifyContent: 'center', alignItems: 'center'}}>
             <View style={styles.services}>
@@ -61,13 +61,13 @@ export default function Services() {
                 </View>
             </View>
         </View>
-    </View>
+    </ScrollView>
     );
 }
 
 const styles = StyleSheet.create({
   container: {
-    margin: 20
+    backgroundColor: 'white'
   },
   title: {
     fontSize: 30,

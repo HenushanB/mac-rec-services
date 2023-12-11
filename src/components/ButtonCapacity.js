@@ -1,7 +1,10 @@
 import { View, Text, StyleSheet, Animated, TouchableWithoutFeedback, Easing } from "react-native";
 import React, {useState} from 'react';
+import { useNavigation } from "@react-navigation/native";
 
 const ButtonCapacity = props => {
+
+    const navigation = useNavigation();
     const [scaleValue] = useState(new Animated.Value(1));
 
     const animateButton = () => {
@@ -16,6 +19,7 @@ const ButtonCapacity = props => {
                 useNativeDriver: true
             }).start();
         });
+        navigation.navigate('Capacity_Screen');
     };
     return(
         <View>

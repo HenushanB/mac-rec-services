@@ -4,10 +4,6 @@ import { TouchableOpacity } from "react-native";
 import ServiceIcon from "./Icons/ServiceIcon";
 import data from "../../assets/Data";
 
-const handleBook = () => {
-
-}
-
 const ServiceModal = ({isVisible, description, handleModal, icon}) => {
     return(
         <Modal isVisible={isVisible}>

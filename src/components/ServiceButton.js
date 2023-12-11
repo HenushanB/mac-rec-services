@@ -9,6 +9,7 @@ const ServiceButton = ({ icon, description, onPress }) => {
     </TouchableOpacity>
   );
 };
+
 const styles = StyleSheet.create({
   button: {
     backgroundColor: '#ECE6F0',

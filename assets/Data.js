@@ -5,6 +5,9 @@ const data = {
     therapy: 'https://cdn3.iconfinder.com/data/icons/type-of-massages-and-therapies/307/massage-masseur-006-512.png',
     gym: 'https://static.thenounproject.com/png/61720-200.png',
     climbing: 'https://static.thenounproject.com/png/156321-200.png',
+    back: 'https://cdn.iconscout.com/icon/free/png-256/free-left-arrow-1965039-1660432.png',
+    purple: 'https://www.clker.com/cliparts/g/N/H/g/I/7/light-violet-circle-hi.png',
+    chart: 'https://imgtr.ee/images/2023/12/10/2ad3533cbaa07710f81ffbaa6ff5cd4f.png'
 }
 
 export default data
