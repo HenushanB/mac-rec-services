@@ -2,9 +2,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {Image, View, Dimensions} from 'react-native';
 import HomeStackScreen from './HomeStack';
 import ServicesStackScreen from './ServicesStack';
+import DropInsStackScreen from './DropInsStack';
 import data from '../../assets/Data';
-
-const { width, height } = Dimensions.get("window")
 
 const Tab = createBottomTabNavigator();
 
@@ -39,6 +38,22 @@ function BottomTabNavigator() {
         <Tab.Screen
             name="Services"
             component={ServicesStackScreen} 
+            options={{
+                tabBarIcon: () => {
+                    return (
+                        <Image
+                            style={{width: 15, height: 15, borderRadius: 50}}
+                            source={{
+                                uri: data.circle
+                            }}
+                        />
+                    )
+                }
+            }}
+        />
+        <Tab.Screen
+            name="DropIns"
+            component={DropInsStackScreen} 
             options={{
                 tabBarIcon: () => {
                     return (

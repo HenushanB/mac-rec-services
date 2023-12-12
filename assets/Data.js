@@ -7,7 +7,15 @@ const data = {
     climbing: 'https://static.thenounproject.com/png/156321-200.png',
     back: 'https://cdn.iconscout.com/icon/free/png-256/free-left-arrow-1965039-1660432.png',
     purple: 'https://www.clker.com/cliparts/g/N/H/g/I/7/light-violet-circle-hi.png',
-    chart: 'https://imgtr.ee/images/2023/12/10/2ad3533cbaa07710f81ffbaa6ff5cd4f.png'
+    chart: 'https://imgtr.ee/images/2023/12/10/2ad3533cbaa07710f81ffbaa6ff5cd4f.png',
+    tripledot: 'https://cdn-icons-png.flaticon.com/512/7066/7066144.png',
+    Badminton: 'https://static-00.iconduck.com/assets.00/badminton-icon-1024x1023-rz21wjja.png',
+    Volleyball: 'https://cdn-icons-png.flaticon.com/512/8686/8686758.png',
+    Swimming: 'https://www.freeiconspng.com/thumbs/swimming-icon-png/sports-swimming-icon-png-1.png',
+    Basketball: 'https://cdn3.iconfinder.com/data/icons/basketball-icons/468/Basketball_Hoop-512.png',
+    PickleBall: 'https://static.thenounproject.com/png/3461915-200.png',
+    Squash: 'https://cdn-icons-png.flaticon.com/512/37/37765.png',
+    Person: 'https://static-00.iconduck.com/assets.00/profile-major-icon-512x512-xosjbbdq.png'
 }
 
 export default data

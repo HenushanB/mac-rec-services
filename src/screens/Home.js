@@ -1,12 +1,25 @@
-import { StyleSheet, View, ScrollView, Text} from 'react-native';
+import { StyleSheet, View, ScrollView, Text, TouchableOpacity} from 'react-native';
 import Search from '../components/Search';
 import ButtonCapacity from '../components/ButtonCapacity';
 import ButtonAnnouncement from '../components/ButtonAnnouncement';
+import { Ionicons } from '@expo/vector-icons'; 
+import { useState } from 'react'
+import ProfileModal from '../components/ProfileModal';
+import data from '../../assets/Data';
 
 export default function Home() {
+    const [isProfileVisible, setIsProfileVisible] = useState(false);
+    const handleModal = () => setIsProfileVisible(() => !isProfileVisible);
+
     return (
         <ScrollView style={[styles.container]}>
-            <Text style={{fontSize: 30, fontWeight:700, margin:10}}>Home</Text>
+            <View style={{flexDirection: 'row', justifyContent: 'space-between', marginVertical: 10}}> 
+                <Text style={{fontSize: 30, fontWeight:700}}>Home</Text>
+                <TouchableOpacity style={{marginRight: 30, alignSelf: 'flex-end'}} onPress={handleModal}>
+                    <Ionicons name="person" size={35} color="black" />
+                </TouchableOpacity>
+                <ProfileModal isVisible={isProfileVisible} handleModal={handleModal} icon={data.Person} />
+            </View>
             <Search/>
             <Text style={styles.welcome}>Welcome, Henushan</Text>
             <View style={styles.capacity}>
